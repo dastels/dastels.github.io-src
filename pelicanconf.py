@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Dave Astels'
 SITENAME = 'The Curmudgeoclast'
-SITEURL = ''
+#SITEURL = 'daveastels.com'
 
 PATH = 'content'
 
@@ -38,3 +38,7 @@ THEME = "/home/dastels/Projects/Personal/pelican-themes/voidy-bootstrap"
 
 PLUGIN_PATHS = ['/home/dastels/Projects/Personal/pelican-plugins']
 PLUGINS = ['footer_insert']
+
+DEFAULT_METADATA = {
+    'status': 'draft',
+}
