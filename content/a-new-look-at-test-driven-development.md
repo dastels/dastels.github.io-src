@@ -1,7 +1,8 @@
 Title: A New Look at Test Driven Development
 Date: 2014-09-29 19:04
 Author: dastels
-Category: Uncategorized
+Category: general
+Tags: general
 Slug: a-new-look-at-test-driven-development
 Status: published
 
@@ -121,7 +122,7 @@ behaviour you want from you code.
 So what does a behaviour specification look like? Well, a first pass
 will look and work a lot like jUnit since:
 
-1 it works quite well enough  
+1 it works quite well enough
 2 everyone is familiar with it
 
 A major difference is vocabulary. Instead of subclassing `TestCase`, you
@@ -168,12 +169,12 @@ specification. Like:
 To sum up:
 
 1 The problem I have with TDD is that its mindset takes us in a
-different direction... a wrong direction.  
+different direction... a wrong direction.
 2 We need to start thinking in terms of behavior specifications, not
-verification tests.  
+verification tests.
 3 The value of doing this will be thinking more clearly about each
 behaviour, relying less on testing by class or by method, and having
-better executable documentation.  
+better executable documentation.
 4 Since TDD is what it is, and everyone isn't about to change their
 meaning of that name (nor should we expect them to), we need a new name
 for this new way of working... BDD: Behaviour Driven Development.

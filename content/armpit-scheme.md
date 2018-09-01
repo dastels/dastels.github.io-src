@@ -1,7 +1,8 @@
 Title: ArmPit Scheme
 Date: 2015-10-02 20:11
 Author: dastels
-Category: hardware, software
+Category: tutorial
+Tags: hardware, software
 Slug: armpit-scheme
 Status: published
 
@@ -69,7 +70,7 @@ And a couple functions to toggle a output pin and do a bit of a delay:
       ((if (pin-set? port pin) pin-clear pin-set) port pin))
 
     (define (take-time n)
-      (if (&gt; n 0)
+      (if (> n 0)
           (begin (* 3 5 7)
                  (take-time (- n 1)))))
 
@@ -84,16 +85,14 @@ that value.
       (config-pin giod 14 pin-mode-out)
       (config-pin giod 15 pin-mode-out)
       (let loop ((n (* 100 (r))))
-        (if (&gt; n 25) (toggle giod 12))
-        (if (&gt; n 50) (toggle giod 13))
-        (if (&gt; n 75) (toggle giod 14))
-        (if (&gt; n 90) (toggle giod 15))
+        (if (> n 25) (toggle giod 12))
+        (if (> n 50) (toggle giod 13))
+        (if (> n 75) (toggle giod 14))
+        (if (> n 90) (toggle giod 15))
         (take-time 10000)
         (loop (* 100 (r)))))
 
 And here's what that looks like.
 
-\[vimeo 141286614 w=500 h=889\]
-
-Code is available on
-[Bitbucket](https://bitbucket.org/dastels/armpit_scheme).
+<iframe src="https://player.vimeo.com/video/141286614" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/141286614">Driven by code in ArmPit Scheme</a> from <a href="https://vimeo.com/user44507464">Dave Astels</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

@@ -1,7 +1,8 @@
 Title: Smarthome: Introduction
 Date: 2017-03-25 19:00
 Author: dastels
-Category: hardware, smarthome, software
+Category: project
+Tags: hardware, smarthome, software
 Slug: smarthome-introduction
 Status: published
 
@@ -54,16 +55,14 @@ I've started writing about the project now that I'm at a point where
 there's enough to write about. I'll be looking at the various parts of
 the system over a series of blog posts.
 
-Overview
---------
+## Overview ##
 
 Let's start with an overview of the system. Below is a block diagram
 showing the major logical and physical components.
 
-![overview](https://daveastels.files.wordpress.com/2017/06/overview.png){.alignnone
-.size-full .wp-image-26 width="472" height="558"}
+<img src="/images/overview.png" />
 
-### Nodes
+### Nodes ###
 
 Nodes are custom
 [ATMEGA328](http://www.microchip.com/wwwproducts/en/ATmega328) based
@@ -100,7 +99,7 @@ Nodes also accept and execute commands. Commands include things like
 colour", and "set a specific extension pin high", "report your sensor
 configuration".
 
-### Base Node
+### Base Node ###
 
 The base is responsible for being the middleman between the node mesh
 and the control system. It talks to the nodes over the mesh network and
@@ -110,13 +109,13 @@ from the nodes; buffering them and passing them on to the host as it
 requests messages. Finally, it handles forwarding commands from the
 control system to specific nodes.
 
-### Host
+### Host ###
 
 This is a small process that simply shuttles data and commands back &
 forth between the base node (and thus the nodes in the mesh) via I2C and
 the brain via [MQTT](http://mqtt.org).
 
-### Brain
+### Brain ###
 
 This is where the magic happens. It takes all the data being sent by the
 nodes, decides what should happen and has either the nodes, the HUE
@@ -124,12 +123,11 @@ system, or something else (e.g. using [AWS
 Polly](https://aws.amazon.com/polly/) to generate speech and play it
 through a speaker) make it happen.
 
-### HUE
+### HUE ###
 
 This is an off the shelf Philips HUE lighting system.
 
-Configuration
--------------
+## Configuration ##
 
 System configuration is mostly dynamic. The HUE system is queried for
 its lights and groups. The nodes are queried for the configuration of
@@ -141,8 +139,7 @@ long to wait after motion stops to turn off the light, what's connected
 to the extension connector, and so on. This will be covered in detail in
 the article on the nodes.
 
-Closing
--------
+## Closing ##
 
 I'm working on articles focussed on each of the components of the
 system. At the same time I'll be building more nodes and deploying them

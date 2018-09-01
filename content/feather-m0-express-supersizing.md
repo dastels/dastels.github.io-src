@@ -1,7 +1,8 @@
 Title: Feather M0 Express supersizing
 Date: 2017-10-15 21:21
 Author: dastels
-Category: CircuitPython, hardware, software
+Category: project
+Tags: circuitpython, hardware, software
 Slug: feather-m0-express-supersizing
 Status: published
 
@@ -13,8 +14,7 @@ M0 Express boards. This time I supersized an M0 Express board,
 specifically a Feather M0 Express, although the same hack should work on
 a Circuit Playground Express.
 
-Hardware
---------
+## Hardware ##
 
 Replacing the 2Mbyte SPI flash chip with an 8Mbyte version was easy: I
 used a solderwick to remove the bulk of the solder on and around the
@@ -30,8 +30,7 @@ flash ship that was physically and functionally compatible. I found the
 hardware drop in replacement with 4 times the space. The chip is
 physically bigger as well, but still fits the 8-SOIC footprint and pads.
 
-Software
---------
+## Software ##
 
 The only change needed to the firmware was to create a definition file
 for the 8Mbyte flash chip, and include that into the Feather config
@@ -47,6 +46,7 @@ definition with:
 That `boards/flash_S25FL064L.h` file is just slightly different than
 `boards/flash_S25FL216K.h`, specifically the size and JDEC information:
 
+    :::c
     /*
      * This file is part of the MicroPython project, http://micropython.org/
      *
@@ -113,25 +113,20 @@ you connect the supersized feather and double press reset.
 
 **Addendum**: Support for this is now included on the 2.x branch.
 
-Gallery
--------
+## Gallery ##
 
-![IMG\_1058](https://daveastels.files.wordpress.com/2017/10/img_1058-e1508100086762.jpg){.size-full
-.wp-image-905 .aligncenter width="600"}
+<img width="100%" src="/images/img_1058-e1508100086762.jpg" />
 
 The new 8Mbyte flash chip next to the original on the Feather.
 
-![IMG\_1062](https://daveastels.files.wordpress.com/2017/10/img_1062.jpg){.size-full
-.wp-image-907 .aligncenter width="600"}
+<img width="100%" src="/images/img_1062.jpg" />
 
 2Mbyte flash chip removed.
 
-![IMG\_1064](https://daveastels.files.wordpress.com/2017/10/img_1064.jpg){.size-full
-.wp-image-909 .aligncenter width="600"}
+<img width="100%" src="/images/img_1064.jpg" />
 
 New flash chip in place.
 
-![feather\_M0\_supersized-CIRCUITPY](https://daveastels.files.wordpress.com/2017/10/feather_m0_supersized-circuitpy.png){.size-full
-.wp-image-925 .aligncenter width="552" height="499"}
+<img width="100%" src="/images/feather_m0_supersized-circuitpy.png" />
 
 The new `CIRCUITPY` directory.

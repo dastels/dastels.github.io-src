@@ -1,7 +1,8 @@
 Title: Making a light switch
 Date: 2015-10-04 22:07
 Author: dastels
-Category: hardware, software
+Category: tutorial
+Tags: hardware, software
 Slug: making-a-light-switch
 Status: published
 
@@ -17,7 +18,7 @@ Specifically, I hooked a switch to a GPIO pin and read its state. Then I
 used that to control a LED hooked to another GPIO pin. To keep is
 simple, I used the same LED as in the last post, adding a switch.
 
-![](https://daveastels.files.wordpress.com/2017/07/light_switch.png)
+<img src="/images/light_switch.png" />
 
 The code
 ========
@@ -54,7 +55,5 @@ The main loop continuously reads the switch and turns the LED on or off
 based on whether the switch is pressed (indicated by a low signal and
 thus a false value).
 
-\[vimeo 141353303 w=500 h=889\]
-
-Code is available on
-[Bitbucket](https://bitbucket.org/dastels/armpit_scheme).
+<iframe src="https://player.vimeo.com/video/141353303" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/141353303">Light Switch</a> from <a href="https://vimeo.com/user44507464">Dave Astels</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

@@ -1,7 +1,8 @@
 Title: Sun Type 3 Keyboard
 Date: 2014-12-27 20:37
 Author: dastels
-Category: hardware, Uncategorized
+Category: project
+Tags: hardware
 Slug: sun-type-3-keyboard
 Status: published
 
@@ -33,8 +34,7 @@ one of the favorite computers I've ever owned. Part of that was SunOS
 the huge screen (well, 21" was huge at the time), but a big part was the
 Sun Type-3 keyboard.
 
-![img1](https://daveastels.files.wordpress.com/2017/06/img1.jpg){.alignnone
-.size-full .wp-image-145 width="800" height="532"}
+<img src="/images/img1.jpg" />
 
 I've thought of getting one of these again ever since my ex made me get
 rid of workstation when I finished grad school. But there was the issue
@@ -72,8 +72,6 @@ The Teensy is now inside the keyboard case with a regular USB cable
 connecting it to the computer. I also added a reset button to the
 outside of the case to make it easy to upgrade the firmware.
 
-![controller](https://daveastels.files.wordpress.com/2017/06/controller.jpg){.alignnone
-.size-full .wp-image-144 width="3264" height="2448"}
+<img width="100%" src="/images/controller.jpg" />
 
-![cable](https://daveastels.files.wordpress.com/2017/06/cable.jpg){.alignnone
-.size-full .wp-image-143 width="2301" height="2564"}
+<img width="100%" src="/images/cable.jpg" />

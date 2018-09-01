@@ -1,7 +1,8 @@
 Title: My first Arduino shield
 Date: 2016-09-06 21:00
 Author: dastels
-Category: hardware
+Category: project
+Tags: hardware
 Slug: my-first-arduino-shield
 Status: published
 
@@ -32,15 +33,15 @@ considering at the moment.
 
 Due to the use of the I2C interface, the circuit is incredibly simple:
 
-![](https://daveastels.files.wordpress.com/2017/07/port-expander_copy_fzz_-_fritzing_-__schematic_view_.png)
+<img width="100%" src="/images/port-expander_copy_fzz_-_fritzing_-__schematic_view_.png" />
 
 As is the case, my first pass was to breadboard this.
 
-![](https://daveastels.files.wordpress.com/2017/07/port_expander_breadboard.jpg)
+<img width="100%" src="/images/port_expander_breadboard.jpg" />
 
 The first pass at a PCB design was pretty basic:
 
-![](https://daveastels.files.wordpress.com/2017/07/port_expander_pcb_v1.jpg)
+<img width="100%" src="/images/port_expander_pcb_v1.jpg" />
 
 There were several problems with this:
 
@@ -78,7 +79,7 @@ The next version addressed these issues:
 4.  Everything is labelled on the silk screen: parts, address
     selections, and the I/O header.
 
-![](https://daveastels.files.wordpress.com/2017/07/port_expander_pcb_v2.jpg)
+<img width="100%" src="/images/port_expander_pcb_v2.jpg" />
 
 The next step is to move to a version using surface mount tech to make
 it more manufacturable. The board is designed and just needs to be
@@ -88,4 +89,4 @@ verified.
 
 Here's the final, hand assembled, working SMT prototype.
 
-![](https://daveastels.files.wordpress.com/2017/07/port_expander_pcb_v3.jpg)
+<img width="100%" src="/images/port_expander_pcb_v3.jpg" />

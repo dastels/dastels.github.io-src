@@ -1,7 +1,8 @@
 Title: SmartHome: Node Hardware
 Date: 2017-04-02 19:45
 Author: dastels
-Category: hardware, smarthome, Uncategorized
+Category: project
+Tags: hardware, smarthome
 Slug: smarthome-node-hardware
 Status: published
 
@@ -14,19 +15,16 @@ I went through several progressively more refined prototypes, first in
 the form of an Arduino Uno shield and a several versions based on the
 Arduino Pro Mini before having a reasonably final design .
 
-![Early\_prototypes](https://daveastels.files.wordpress.com/2017/06/early_prototypes.jpg){.alignnone
-.size-full .wp-image-76 width="1280" height="758"}
+<img width="100%" src="/images/early_prototypes.jpg" />
 
 When I thought I had it, I breadboarded it to make final tweaks. Here's
 the current design on a breadboard. Because it looks cool.
 
-![breadboard](https://daveastels.files.wordpress.com/2017/06/breadboard.jpg){.alignnone
-.size-full .wp-image-72 width="2913" height="1984"}
+<img width="100%" src="/images/breadboard.jpg" />
 
 Eventually, I had a design I was happy enough with to make a custom PCB.
 
-![nodeboard](https://daveastels.files.wordpress.com/2017/06/nodeboard.jpeg){.alignnone
-.size-full .wp-image-77 width="600" height="568"}
+<img width="100%" src="/images/nodeboard.jpeg" />
 
 Over time some elements have remained constant:
 
@@ -53,15 +51,13 @@ Some things, however, have evolved:
 -   Adding standard support for a VL53L0X laser proximity sensor
 -   Adding standard support for a string of 8 or 60 neopixels
 
-The circuitry
--------------
+## The circuitry ##
 
 Let's go through the circuitry, once functional block at a time.
 
-### Power
+### Power ###
 
-![node-power](https://daveastels.files.wordpress.com/2017/06/node-power.png){.alignnone
-.size-full .wp-image-80 width="859" height="559"}
+<img width="100%" src="/images/node-power.png" />
 
 This is very much like the standard Arduino Uno power circuit. The big
 difference is that there is no USB power, and the 3.3v regulator can
@@ -82,8 +78,7 @@ Adafruit](https://www.adafruit.com/products/63).
 
 ### MCU
 
-![node-mcu](https://daveastels.files.wordpress.com/2017/06/node-mcu.png){.alignnone
-.size-full .wp-image-79 width="1433" height="1057"}
+<img width="100%" src="/images/node-mcu.png" />
 
 Here we have the heart of the node: the [ATmega328
 MCU](http://www.microchip.com/wwwproducts/en/ATmega328). You can see the
@@ -125,8 +120,7 @@ described next.
 
 ### I2C
 
-![node-i2c](https://daveastels.files.wordpress.com/2017/06/node-i2c.png){.alignnone
-.size-full .wp-image-78 width="1349" height="1240"}
+<img width="100%" src="/images/node-i2c.png" />
 
 I2C is an amazing interface standard. You can get all kinds of sensors
 and other useful bits & pieces that you can connect to an MCU using a
@@ -172,10 +166,9 @@ sensors](https://www.adafruit.com/product/386) but they were bulky and
 used more cpu cycles to interact with than I liked. The Si7021 is more
 accurate and since it uses I2C, much easier to interact with.
 
-### SPI
+### SPI ###
 
-![node-spi](https://daveastels.files.wordpress.com/2017/06/node-spi.png){.alignnone
-.size-full .wp-image-81 width="515" height="721"}
+<img src="/images/node-spi.png" />
 
 The part of the circuit is fairly simple: an NRF24L01+ breakout board,
 and the ICSP connector used to flash the bootloader. The only thing that
@@ -187,12 +180,11 @@ this, take into account the case you are putting the node into. I find
 having them stick out parallel to the breakout rather than up and at a
 right angle to it works best.
 
-Sensors
--------
+## Sensors ##
 
 Now let's look at the other pieces that connect to a node.
 
-### Photoresistor
+### Photoresistor ###
 
 This is a very basic and simple component. It is a resistor whose
 resistance is inversely proportional to the amount of light falling on
@@ -202,8 +194,7 @@ resistance, the higher the voltage at the midpoint of the divider, and
 the larger the value returned by the analog to digital converter it is
 connected to.
 
-![photo-resistor](https://daveastels.files.wordpress.com/2017/06/photo-resistor.png){.alignnone
-.size-full .wp-image-83 width="92" height="178"}
+<img src="/images/photo-resistor.png" />
 
 The photoresistors I have used are standard [cadmium
 sulphide](https://en.wikipedia.org/wiki/Cadmium_sulfide) (aka CdS)
@@ -240,8 +231,7 @@ PIRs](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/).
 
 PIRs are all mostly the same, and look like this:
 
-![pir](https://daveastels.files.wordpress.com/2017/06/pir.jpg){.alignnone
-.size-full .wp-image-84 width="1500" height="1500"}
+<img src="/images/pir.jpg" />
 
 There are some differences between models. Specifically the presence of
 a jumper to select retriggerable mode or not, and a sensitivity
@@ -249,8 +239,7 @@ adjustment. You want both. Look for units like the one below. You can
 see the jumper at the top left and the two adjustable resistors at the
 top (the orange twisty things).
 
-![pir\_back](https://daveastels.files.wordpress.com/2017/06/pir_back.jpg){.alignnone
-.size-full .wp-image-85 width="500" height="500"}
+<img src="/images/pir_back.jpg" />
 
 I find that retriggerable mode works best. In non-retriggerable mode, a
 motion detection starts a single, fixed width, high pulse on the output.
@@ -259,14 +248,12 @@ pulse timeout. The result is that as long as motion is being detected,
 the output will be high. This has proven to be far more useful. The
 diagrams below illustrate the difference.
 
-![non-retriggerable](https://daveastels.files.wordpress.com/2017/06/non-retriggerable.gif){.alignnone
-.size-full .wp-image-82 width="550" height="230"}  
-  
+<img src="/images/non-retriggerable.gif" />
+
 Non-retriggerable mode
 
-![retriggerable](https://daveastels.files.wordpress.com/2017/06/retriggerable.gif){.alignnone
-.size-full .wp-image-86 width="550" height="219"}  
-  
+<img src="/images/retriggerable.gif" />
+
 Retriggerable mode
 
 The *time* adjustment controls the width of the output pulse (or when
@@ -278,7 +265,7 @@ The PIR is connected to digital pin 2, and a change in it's output
 triggers an interrupt. This is allows the node to signal the control
 system that motion has started/stopped as soon as possible.
 
-### RGB LED
+### RGB LED ###
 
 An RGB LED is simply three LEDs (one each red, green, and blue) in a
 single component with either their anodes (common anode) or cathodes
@@ -289,12 +276,9 @@ common cathode. The RGB connector has both +5v and ground in addition to
 red, green, and blue. As mentioned, the current limiting resistors are
 on the board so all that is required is the actual LED.
 
-![common-anode](https://daveastels.files.wordpress.com/2017/06/common-anode.png){.alignnone
-.size-full .wp-image-74 width="101"
-height="188"}![common-cathode](https://daveastels.files.wordpress.com/2017/06/common-cathode.png){.alignnone
-.size-full .wp-image-75 width="104" height="188"}
+<img src="/images/common-anode.png" /><img src="/images/common-cathode.png" />
 
-### Neopixels
+### Neopixels ###
 
 I just love neopixels.
 
@@ -309,8 +293,7 @@ using these as undercounter lighting. The 8-pixel stick is being used to
 light my coffee making station. Yes, I have a dedicated space for making
 coffee. It's just how I roll.
 
-![coffee-station-light](https://daveastels.files.wordpress.com/2017/06/coffee-station-light.jpg){.alignnone
-.size-full .wp-image-73 width="3024" height="3111"}
+<img width="100%" src="/images/coffee-station-light.jpg" />
 
 The meter long strip will be lighting under one section of kitchen
 cabinets. These will require a tweak to the power circuitry since they
@@ -354,14 +337,12 @@ board](https://www.amazon.com/gp/product/B012YZ2Q82) can fit perfectly
 in either an end or the rectangular face cutout. The PIR sensor also
 fits perfectly in the more square cutout (with a touch of glue).
 
-![wall\_node](https://daveastels.files.wordpress.com/2017/06/wall_node.jpg){.alignnone
-.size-full .wp-image-91 width="3024" height="3183"}  
-  
+<img width="100%" src="/images/wall_node.jpg" />
+
 A vertically mounted node.
 
-![shelf\_node](https://daveastels.files.wordpress.com/2017/06/shelf_node.jpg){.alignnone
-.size-full .wp-image-90 width="2137" height="1627"}  
-  
+<img width="100%" src="/images/shelf_node.jpg" />
+
 A horizontally, under-shelf mounted node. Note: there are resistors on
 the face plate since this is an older prototype; not one of the custom
 PCBs.

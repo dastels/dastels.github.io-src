@@ -1,7 +1,8 @@
 Title: Blinking an external LED
 Date: 2015-10-04 18:55
 Author: dastels
-Category: hardware, software
+Category: tutorial
+Tags: hardware, software
 Slug: blinking-an-external-led
 Status: published
 
@@ -9,8 +10,7 @@ Once ArmPit Scheme was in place and running, and manipulating the
 onboard LEDs, it was time to grab some components, wires, and a
 breadboard and get hacking.
 
-The wiring
-----------
+## The wiring ##
 
 My first project was simple: blink an external LED. Unlike Arduino
 boards, the Disco board has male pin headers, not female. This means
@@ -20,28 +20,25 @@ in male-male, male-female, and female-female varieties. Make-female
 would have been ideal for connecting to a bredboard, bit I just have
 male-male and female-female.
 
-![female-female
-jumpers](https://daveastels.files.wordpress.com/2017/07/jumpers.jpg)
+<img width="100%" src="/images/jumpers.jpg" />
 
 Fortunately, I also have some long pin header strips that are great for
 connecting these jumpers to a breadboard.
 
-![](https://daveastels.files.wordpress.com/2017/07/pin_headers.jpg)
+<img width="100%" src="/images/pin_headers.jpg" />
 
-![](https://daveastels.files.wordpress.com/2017/07/headers_on_breadboard.jpg)
+<img width="100%" src="/images/headers_on_breadboard.jpg" />
 
-The circuit
-===========
+### The circuit ###
 
 Connecting a LED is, as mentioned above, simple. One resister connected
 to a GPIO pin (I used PD10) then a LED connected from the other end of
 the LED to ground. Be sure to get the LED right way round or it won't
 light... being a diode and all.
 
-![](https://daveastels.files.wordpress.com/2017/07/external-led.png)
+<img width="100%" src="/images/external-led.png" />
 
-The code
-========
+### The code ###
 
 First some utility constants and functions
 
@@ -68,6 +65,3 @@ I added a count to it would do this 10 times and exit.
           (if (zero? c)
               #f
               (loop (- c 1))))))
-
-Code is available on
-[Bitbucket](https://bitbucket.org/dastels/armpit_scheme).

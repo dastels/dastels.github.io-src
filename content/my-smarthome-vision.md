@@ -1,7 +1,8 @@
 Title: My smarthome vision
 Date: 2017-07-24 21:15
 Author: dastels
-Category: smarthome
+Tags: smarthome
+Category: general
 Slug: 230
 Status: draft
 
@@ -106,14 +107,14 @@ The voice interface has to be conversational. The problem with a system
 such as Alexa is that it is not very conversational. One gives it
 commands:
 
-*”Alexa, turn the kitchen lights on.”*  
+*”Alexa, turn the kitchen lights on.”*
 `OK`
 
 In some cases you are asked for minimal additional information
 
-*”Alexa, set a timer.”*  
-`for how long?`  
-*”one hour”*  
+*”Alexa, set a timer.”*
+`for how long?`
+*”one hour”*
 `Timer for one hour, starting now.`
 
 Interaction with current systems is typically initiated by the user. A

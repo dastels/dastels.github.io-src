@@ -1,30 +1,31 @@
 Title: PWM control of LEDs
 Date: 2015-10-08 04:55
 Author: dastels
-Category: hardware, software
+Category: tutorial
+Tags: hardware, software
 Slug: pwm-control-of-leds
 Status: published
 
 Pulse Width Modulation is a technique to vary the duty cycle of a signal
 while keeping it's frequency constant. For example:
 
-![duty cycles from
-https://learn.sparkfun.com/tutorials/pulse-width-modulation](https://daveastels.files.wordpress.com/2017/07/duty_cycles.jpg)
+<img width="100%" src="/images/duty_cycles.jpg" />
 
 This turns out to be a very handy thing to be able to do. So much so
 that it's a basic feature in most, if not all, MCUs.
 
-LED brightness
---------------
+## LED brightness ##
 
 The most basic use is to control the brightness of an LED. Here is a
 clip of the four onboard LEDs being controlled by PWMs. They're all
 doing the same thing, so it's not the most exciting. But it proves the
 point.
 
-\[vimeo 141745926 w=500 h=889\]
+<iframe src="https://player.vimeo.com/video/141745926" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/141745926">Four PWMs driving the onboard LEDs.</a> from <a href="https://vimeo.com/user44507464">Dave Astels</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-### The requisite constants
+
+### The requisite constants ###
 
     (define pin-mode-alternate 2)
     (define otype-pushpull  0)
@@ -47,7 +48,7 @@ Not that these registers are 16-bit so we can just use integer values
 and don't have to use vectors (as you may recall, Armpit uses 30-bit
 integers so if we need the top two bits we need to use byte vectors).
 
-### Configuration
+### Configuration ###
 
     (define (init-gpio-pins)
       (config-pin giod 12 pin-mode-alternate otype-pushpull ospd-highspeed pupd-none gpio-af-tim4)
@@ -73,10 +74,10 @@ Timer 4 is configured to receive a clock signal from the RCC, repeatedly
 count from 0 to 255, and drive the output high when the count exceeds
 the comparison value.
 
-### Main loop
+### Main loop3
 
     (define (take-time n)
-      (if (&gt; n 0)
+      (if (> n 0)
           (begin (* 3 5 7)
                  (take-time (- n 1)))))
 
@@ -98,16 +99,15 @@ the comparison value.
                (loop (+ brightness step) step)))))
 
 The main function initializes the GPIO pins and timer 4, then enters an
-endless loop:  
-\* the current brightness value is written to the 4 channels of timer
-4,  
-\* there's a delay so the effect is slow enough to be visible  
-\* the brightness value is checked against each bound (0 & 255), if it's
-hit the bound the direction is reveresed, otherwise it continues to the
-next value in the same direction.
+endless loop:
 
-RGB
----
+*    the current brightness value is written to the 4 channels of timer 4,
+*    there's a delay so the effect is slow enough to be visible
+*    the brightness value is checked against each bound (0 & 255), if it's
+     hit the bound the direction is reveresed, otherwise it continues to the
+     next value in the same direction.
+
+## RGB ##
 
 LEDs are available in a variety of shapes and sizes, but most relevant
 to this post: color. Of particular are red, green, and blue LEDs. Why?
@@ -116,7 +116,7 @@ and can be combined is various proportions to create any other color. If
 we take an LED of each of these three colors and put them close together
 our eyes will blend the three into a single color. Very handy.
 
-![](https://daveastels.files.wordpress.com/2017/07/ws2812_closeup.jpg)
+<img width="100%" src="/images/ws2812_closeup.jpg" />
 
 All we need to do is drive each of the three with a PWM and we can
 create any color we desire. Well, almost any. The actual number is the
@@ -129,7 +129,8 @@ of colors.
 Here's an RGB LED being driven through a variety of colors. The LED is
 in the keyswitch.
 
-\[vimeo 141745554 w=500 h=889\]
+<iframe src="https://player.vimeo.com/video/141745554" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/141745554">Three PWM channels driving an RGB LED.</a> from <a href="https://vimeo.com/user44507464">Dave Astels</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 The ideas behind this code are much the same. You configure the GPIO
 pins and the timer. In this example I'm using PWM channels 1, 2, & 3 of
@@ -185,6 +186,3 @@ increment the red value while leaving green and blue unchanged. Each
 tuple takes 255 times through the loop. Once that's happened it moves to
 the next tuple. Once all tuples have been used, it starts again at the
 beginning.
-
-Code is available on
-[Bitbucket](https://bitbucket.org/dastels/armpit_scheme).

@@ -1,7 +1,8 @@
 Title: Analog to digital
 Date: 2015-10-04 23:06
 Author: dastels
-Category: hardware, software
+Category: tutorial
+Tags: hardware, software
 Slug: analog-to-digital
 Status: published
 
@@ -40,7 +41,7 @@ ones for the ADC:
     (define adc-bits-eoc #x00000002)
     (define adc-reg-cr2  (* -1 #x08))
     (define adc-reg-dr   #x4C)
-    (define adc-reg-ccr  (* -1 #x0304)) 
+    (define adc-reg-ccr  (* -1 #x0304))
 
     (define rcc-reg-apb2enr (* -1 #x44))
 
@@ -94,7 +95,7 @@ converted value to the console. However, that's not very interesting so
 I hooked up 4 LEDs and controlled them based on the value. Here's the
 circuit:
 
-![](https://daveastels.files.wordpress.com/2017/07/adc.png)
+<img src="/images/adc.png" />
 
 I had to initialize those GPIO pins so I put that in a function:
 
@@ -131,10 +132,10 @@ which takes a reading and, if it is valid, passes it to the
         (pin-clear giod 1)
         (pin-clear giod 2)
         (pin-clear giod 3)
-        (cond ((= percent 25) (= percent 50) (= percent 75) (pin-set giod 3)))))
-
-**Wordpress seems to eat greater-than & less-than characters even in a
-pre block. So go to bitbucket to see the code.**
+        (cond ((<= percent 25) (pin-set giod 0))
+              ((<= percent 50) (pin-=set giod 1))
+              ((<= percent 75) (pin-set giod 2))
+              (else (pin-set giod 3)))))
 
 First, the reading is output to the console. Then it's used to compute a
 percentage (12 bits of resolution gives a maximum value of 4095). All
@@ -143,7 +144,5 @@ the percentage value falls.
 
 Here's what it looks like.
 
-\[vimeo 141365391 w=500 h=889\]
-
-Code is available on
-[Bitbucket](https://bitbucket.org/dastels/armpit_scheme).
+<iframe src="https://player.vimeo.com/video/141365391" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/141365391">ADC value driving LEDs</a> from <a href="https://vimeo.com/user44507464">Dave Astels</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

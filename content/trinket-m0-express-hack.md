@@ -1,7 +1,8 @@
 Title: Trinket M0 Express Hack
 Date: 2017-09-01 02:45
 Author: dastels
-Category: CircuitPython, hardware, software
+Category: project
+Tags: circuitpython, hardware, software
 Slug: trinket-m0-express-hack
 Status: published
 
@@ -67,16 +68,12 @@ easily tap into the ground and 3v output from the Trinket, as well as
 hold it solidly in place relative to the Flash chip. This minimized any
 forces on the solder joints on the MCU pins.
 
-![trinket and flash
-mounted](https://daveastels.files.wordpress.com/2017/08/trinket-and-flash-mounted-e1504196631661.jpg){.size-full
-.wp-image-675 .aligncenter width="2632" height="2211"}
+<img width="100%" src="/images/trinket-and-flash-mounted-e1504196631661.jpg" />
 
 To make the connections, I first put the Trinket in a board holder and
 soldered short lengths of wire-wrap wire to the MCU pins I was using.
 
-![wires on
-MCU](https://daveastels.files.wordpress.com/2017/08/wires-on-mcu-e1504196771749.jpg){.size-full
-.wp-image-676 .aligncenter width="2514" height="2017"}
+<img width="100%" src="/images/wires-on-mcu-e1504196771749.jpg" />
 
 With that done, it was a simple matter to solder the other ends of the
 wires to the flash chip. I added short strips of header to the
@@ -84,9 +81,7 @@ breadboard to make this even simpler. Note that I added an external
 reset pushbutton to minimize the chance of jostling the wires and their
 delicate connection to the MCU as much as possible.
 
-![connected and
-working](https://daveastels.files.wordpress.com/2017/08/connected-and-working-e1504196978187.jpg){.size-full
-.wp-image-673 .aligncenter width="2983" height="3611"}
+<img width="100%" src="/images/connected-and-working-e1504196978187.jpg" />
 
 Software
 --------
@@ -102,7 +97,7 @@ suffix. Here are the diffs:
     >:diff boards/trinket_m0/conf_access.h boards/trinket_m0_express/conf_access.h
     79c79
     < #define LUN_0_NAME "\"MicroPython VFS[0]\""
-    --- 
+    ---
     >#define LUN_0_NAME "\"CircuitPython VFS[0]\""
 
     >:diff boards/trinket_m0/conf_usb.h boards/trinket_m0_express/conf_usb.h
@@ -168,8 +163,7 @@ Once I had it cobbled together on a breadboard, and the software squared
 away, it was time to make a more useful version. As before I started by
 soldering short lengths of wire-wrap wire onto the SAMD21 pins.
 
-![v2-wires](https://daveastels.files.wordpress.com/2017/09/v2-wires.jpg){.size-full
-.wp-image-733 .aligncenter width="1668" height="1854"}
+<img width="100%" src="/images/v2-wires.jpg" />
 
 This time I wanted a self-contained version, so I piggybacked the flash
 ship onto the MCU with some epoxy. I also put epoxy over the pins that
@@ -177,14 +171,12 @@ had the wires soldered onto them to protect the connections. One change
 I made from this photo before the epoxy set was to rotate the flash chip
 180 degrees.
 
-![v2-piggyback-flash](https://daveastels.files.wordpress.com/2017/09/v2-piggyback-flash.jpg){.size-full
-.wp-image-732 .aligncenter width="2459" height="2706"}
+<img width="100%" src="/images/v2-piggyback-flash.jpg" />
 
 This is the final version with the wiring finished, and the SPI select
 pullup resister added.
 
-![v2-very-final](https://daveastels.files.wordpress.com/2017/09/v2-very-final.jpg){.size-full
-.wp-image-777 .aligncenter width="1672" height="1804"}
+<img width="100%" src="/images/v2-very-final.jpg" />
 
 Conslusion
 ----------
@@ -205,8 +197,7 @@ Tidying up
 I've made another Trinket M0 Express, this time focusing on making the
 wiring a bit tidier:
 
-![TidierTrinketM0Express](https://daveastels.files.wordpress.com/2017/09/tidiertrinketm0express.jpg){.alignnone
-.size-full .wp-image-780 width="1306" height="1455"}
+<img width="100%" src="/images/tidiertrinketm0express.jpg" />
 
 CircuitPython 2.0 update
 ------------------------

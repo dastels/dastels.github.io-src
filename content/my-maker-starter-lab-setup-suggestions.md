@@ -1,7 +1,8 @@
 Title: My maker starter lab setup suggestions
 Date: 2018-04-04 01:41
 Author: dastels
-Category: hardware
+Category: general
+Tags: general
 Slug: my-maker-starter-lab-setup-suggestions
 Status: published
 
@@ -58,7 +59,7 @@ Basic setup
     Get one or both and use it every time you take the iron off of its
     holder, and more often if you're doing a lot of soldering at a time.
     Some [tip cleaner/tinner](https://www.amazon.com/dp/B00NS4J6BY) is a
-    good idea as well.  
+    good idea as well.
    **Never, NEVER, NEVER EVER, flick the iron to shake excess solder
     off. I would to that when I was but a wee lad starting out. The
     problem is that not all the solder comes off at the end out the

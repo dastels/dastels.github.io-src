@@ -1,8 +1,8 @@
 Title: New Blog Tech
 Date: 2018-08-30 11:35
 Modified: 2018-08-30 11:35
-Category: General
-Tags: pelican, publishing
+Category: general
+Tags: general
 Slug: new-blog-tech
 Authors: Dave Astels
 Summary: I've moved to a different blog tech/hosting
