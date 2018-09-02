@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Dave Astels'
 SITENAME = 'The Curmudgeoclast'
+SITESUBTITLE ='Thoughts, projects, and ramblings of Dave Astels'
 #SITEURL = 'daveastels.com'
 
 PATH = 'content'
