@@ -8,11 +8,11 @@ Status: published
 <tbody>
 <tr style="font-size:1.3em;color:#000;">
 <td>
-**cur·mud·geon**
+<b>cur·mud·geon</b>
 
 </td>
 <td>
-*“This sucks.”*
+<em>“This sucks.”</em>
 
 </td>
 </tr>
@@ -25,11 +25,11 @@ frequently old) person full of stubborn ideas or opinions.
 </tr>
 <tr style="font-size:1.3em;color:#000;">
 <td>
-**i·con·o·clast**
+<b>i·con·o·clast</b>
 
 </td>
 <td>
-*“Wouldn’t it be cool if…”*
+<em>“Wouldn’t it be cool if…”</em>
 
 </td>
 </tr>
@@ -45,11 +45,11 @@ dogmata or conventions.
 </tr>
 <tr style="font-size:1.3em;color:#000;">
 <td>
-**cur·mud·ge·o·clast**
+<b>cur·mud·ge·o·clast</b>
 
 </td>
 <td>
-*“This sucks, but wouldn’t it be cool if…”*
+<em>“This sucks, but wouldn’t it be cool if…”</em>
 
 </td>
 </tr>
