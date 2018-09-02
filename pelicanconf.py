@@ -28,13 +28,13 @@ LINKS = (('Adafruit', 'http://adafruit.com'),
 
 
 # Social widget
-SOCIAL = (('Twitter', 'http://twitter.com/dastels', 'fa fa-twitter-square fa-fw fa-lg'),
-          ('Facebook', 'http://www.facebook.com/dastels', 'fa fa-facebook-square fa-fw fa-lg'),
-          ('Linkedin', 'https://www.linkedin.com/in/dastels/', 'fa fa-linkedin-square fa-fw fa-lg'),
-          ('Instagram', 'https://www.instagram.com/dastels', 'fa fa-instagram fa-fw fa-lg'),
-          ('dastels on adafruit discord', 'http://adafru.it/discord'),
-          ('BitBucket', 'http://bitbucket.org/dastels', 'fa fa-bitbucket-square fa-fw fa-lg'),
-          ('GitHub', 'http://github.com/dastels', 'fa fa-github-square fa-fw fa-lg'),
+SOCIAL = (('Twitter', 'http://twitter.com/dastels', 'fab fa-twitter-square fa-fw fa-lg'),
+          ('Facebook', 'http://www.facebook.com/dastels', 'fab fa-facebook-square fa-fw fa-lg'),
+          ('Linkedin', 'https://www.linkedin.com/in/dastels/', 'fab fa-linkedin fa-fw fa-lg'),
+          ('Instagram', 'https://www.instagram.com/dastels', 'fab fa-instagram fa-fw fa-lg'),
+          ('dastels on adafruit discord', 'http://adafru.it/discord', 'fab fa-discord fa-fw fa-lg'),
+          ('BitBucket', 'http://bitbucket.org/dastels', 'fab fa-bitbucket fa-fw fa-lg'),
+          ('GitHub', 'http://github.com/dastels', 'fab fa-github-square fa-fw fa-lg'),
 )
 
 DEFAULT_PAGINATION = 10
