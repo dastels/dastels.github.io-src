@@ -75,6 +75,8 @@ Most recently I've gotten caught up in the Pathfinder TableTop RPG from Paizo.
 I've been programming and hacking hardware in some fashion for about 30 years, on many systems in too many languages to remember. I'm the guy
 originally behind the idea that turned into sSpec (for Smalltalk) and then rSpec. I've written books on extreme programming, and test driven development. I've written articles, and spoken at conferences. Mostly I like hacking on code and hardware and using software to solve problems. Preferably hard problems.
 
+Since working for SteelSeries, I've rekindled my love of working with hardware, especially embedded systems. This is the stuff I started my career with. These days it means things liek Arduino, Raspberry Pi, and specifically the boards from Adafruit. I've been writing extensively for [Adafruit](https://learn.adafruit.com) since late 2017, and for HackSpace magazine since mid 2018.
+
 ### Food
 
 I've been interested in food and cooking since I was a teen. I started out by teaching myself to cook Chinese food using cooking shows and cookbooks (Wok with Yan out of Vancouver... Steven Yan, not Martin Yan).
@@ -84,3 +86,5 @@ My culinary interest/involvement ebbed and flowed over the years. What really ki
 My latest obsession is baking. I've always tended to stovetop cooking in various forms. I like tasting & fiddling as I go. Baking is chemistry: mix it up, apply heat, and hope for the best. Since becoming a rabid fan of [The Great British Bake-off](http://www.bbc.co.uk/programmes/b013pqnm) which is also shown on PBS as [The Great British Baking Show](http://www.pbs.org/food/shows/great-british-baking-show/). To guide me, I am working my way through [Cookie Love](http://www.amazon.com/Cookie-Love-Techniques-Ordinary-Extraordinary/dp/1607746816) by Mindy Segal of Chicago's [Hot Chocolate](http://hotchocolatechicago.com). Yes I'm diabetic so I try not to eat many cookies, but my Pathfinder group and the folks at work have enjoyed the results of my adventure.
 
 Update (early 2017): As result of moving back to Canada and working in a distributed/remote engineering team, I no longer have "folks at work" or a all-in-one-room gaming group. So no more cookies. Suzanne has developed a passion for making whole/multi-grain breads which is awesome in many ways.
+
+Update (mid 2018): I now run a Pathfinder group in our apartment, so no longer have any excuse not to bake more cookies.
