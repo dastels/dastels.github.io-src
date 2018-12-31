@@ -7,7 +7,87 @@ Status: published
 I get asked quite regularly what books I would suggest. So here's a
 list.
 
-<h2>Design Patterns</h2>
+## Programming ##
+
+### The Art of Computer Programming ###
+
+<em>by Donald Knuth</em>
+
+<table>
+<tr>
+<td width="20%">
+<a href="http://www.amazon.com/gp/product/0321751043/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321751043&amp;linkCode=as2&amp;tag=daveastelscom-20" target="_blank"><img border="0" height="160" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=0321751043&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=daveastelscom-20"></a>
+</td>
+<td style="padding-left:10px;">
+This is our Bible. I'm currently working though it slowly. It's dense, and math heavy, so be prepared for some serious work. Currently published in four volumes: Fundamental Algorithms, Seminumerical Algorithms, Sorting and Searching, and Combinatorial Algorithms (Part 1).
+</td>
+</tr>
+</table>
+
+### Fundamentals of Computer Algorithms ###
+
+<em>by Ellis Horowitz and Sartaj Sahni</em>
+
+<table>
+<tr>
+<td width="20%">
+<a href="http://www.amazon.com/gp/product/0914894226/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0914894226&amp;linkCode=as2&amp;tag=daveastelscom-20" target="_blank"><img border="0" height="160" src="http://ecx.images-amazon.com/images/I/51Rg9vewPVL._SX368_BO1,204,203,200_.jpg" height="160"></a>
+</td>
+<td style="padding-left:10px;">
+A classic reference for algorithms. I still have the copy (of this as well as the next book) I got for my undergrad classes. After some introductory material it dives into Searching and sorting algorithms, moves on through dynamic programming and backtracking, before finishing off with a discussion of NP-hard and NP-complete. It's 30 years old but fundamental algorithms haven't changed in that time. You can probably pick this up pretty cheaply. It's definitely worth dropping a few bucks on. Code is in a pseudo-code language designed for the book.
+</td>
+</tr>
+</table>
+
+### Fundamentals of Data Structures ###
+
+<em>by Ellis Horowitz and Sartaj Sahni</em>
+
+<table>
+<tr>
+<td width="20%">
+<a href="http://www.amazon.com/gp/product/091489420X/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=091489420X&amp;linkCode=as2&amp;tag=daveastelscom-20"><img border="0" height="160" src="http://ecx.images-amazon.com/images/I/41%2B%2BFOoAJSL._SX373_BO1,204,203,200_.jpg"></a>
+</td>
+<td style="padding-left:10px;">
+This is the companion to the above algorithm book.  Same authors, same value. It starts off with <strong>the</strong> basic data structure: the array. It then moves through stacks, queues, lists, graphs, before spending a couple chapters on sorting. It follows that with a chapter on symbol tables and hash tables, and finishing off with a discussion of file structures. Code is in a pseudo-code language designed for the book.
+</td>
+</tr>
+</table>
+
+### Structure and Interpretation of Computer Programs ###
+
+<em>by Harold Abelson and Gerald Jay Sussman</em>
+
+<table>
+<tr>
+<td width="20%">
+<a href="http://www.amazon.com/gp/product/0262510871/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0262510871&amp;linkCode=as2&amp;tag=daveastelscom-20" target="_blank"><img border="0" height="160" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=0262510871&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=daveastelscom-20"></a>
+</td>
+<td style="padding-left:10px;">
+If you want to become competent in Scheme (a clean, spare incarnation of the Lisp ideals), this is a good choice. If you want to learn an assortment of blitheringly deep and awesome programming ideas and techniques (and pick up a knowledge of Scheme in the process), this is one of the best books available. It was an intro CS text at various well reputed universities in the years since it was first published and was written by two of the greats at MIT, including one of the designers of Scheme.
+</td>
+</tr>
+</table>
+
+### Compilers: Principles, Techniques, and Tools ###
+
+aka The Dragon Book
+<em>by Alfred V. Aho, Monica S. Lam, Ravi Sethi, and Jeffrey D. Ullman</em>
+
+<table>
+<tr>
+<td width="20%">
+<a href="http://www.amazon.com/gp/product/0201100886/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0201100886&amp;linkCode=as2&amp;tag=daveastelscom-20" target="_blank"><img border="0" height="160" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=0201100886&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=daveastelscom-20"></a>
+</td>
+<td style="padding-left:10px;">
+This is a classic book on implementing programming languages. Affectionately known as <em>The Dragon Book</em>. There is a second edition, but the original is more focused on actual language processing.
+</td>
+</tr>
+</table>
+
+## Propgramming Techniques ##
+
+### Design Patterns ###
 
 <em>by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides</em>
 
@@ -24,7 +104,7 @@ A Design Pattern, whether in Alexander's original context of architecture and ci
 </tr>
 </table>
 
-<h2>Refactoring</h2>
+### Refactoring ###
 
 <em>by Martin Fowler</em>
 
@@ -42,7 +122,7 @@ Refactoring is a word that grossly overused these days. It doesn't mean "changin
 </tr>
 </table>
 
-<h2>Test Driven Development by Example</h2>
+### Test Driven Development by Example ###
 
 <em>by Kent Beck</em>
 
@@ -63,8 +143,8 @@ If you are learning TDD for the first time, this is a great choice of book. The 
 </tr>
 </table>
 
-<h2>Agile Software Development, Principles, Patterns, and Practices<br/>
-Agile Principles, Patterns, and Practices in C Sharp</h2>
+### Agile Software Development, Principles, Patterns, and Practices<br/>
+Agile Principles, Patterns, and Practices in C Sharp ###
 
 <em>by Robert C. Martin</em>
 
@@ -81,22 +161,7 @@ These two books (only bother getting one depending on your language of choice: C
 </tr>
 </table>
 
-<h2>Structure and Interpretation of Computer Programs</h2>
-
-<em>by Harold Abelson and Gerald Jay Sussman</em>
-
-<table>
-<tr>
-<td width="20%">
-<a href="http://www.amazon.com/gp/product/0262510871/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0262510871&amp;linkCode=as2&amp;tag=daveastelscom-20" target="_blank"><img border="0" height="160" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=0262510871&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=daveastelscom-20"></a>
-</td>
-<td style="padding-left:10px;">
-If you want to become competent in Scheme (a clean, spare incarnation of the Lisp ideals), this is a good choice. If you want to learn an assortment of blitheringly deep and awesome programming ideas and techniques (and pick up a knowledge of Scheme in the process), this is one of the best books available. It was an intro CS text at various well reputed universities in the years since it was first published and was written by two of the greats at MIT, including one of the designers of Scheme.
-</td>
-</tr>
-</table>
-
-<h2>Smalltalk Best Practices</h2>
+### Smalltalk Best Practices ###
 
 <em>by Kent Beck</em>
 
@@ -113,23 +178,7 @@ This relevance is hardly surprising given that Smalltalk was a strong influence 
 </tr>
 </table>
 
-<h2>Compilers: Principles, Techniques, and Tools</h2>
-
-aka The Dragon Book
-<em>by Alfred V. Aho, Monica S. Lam, Ravi Sethi, and Jeffrey D. Ullman</em>
-
-<table>
-<tr>
-<td width="20%">
-<a href="http://www.amazon.com/gp/product/0201100886/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0201100886&amp;linkCode=as2&amp;tag=daveastelscom-20" target="_blank"><img border="0" height="160" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=0201100886&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=daveastelscom-20"></a>
-</td>
-<td style="padding-left:10px;">
-This is a classic book on implementing programming languages. Affectionately known as <em>The Dragon Book</em>. There is a second edition, but the original is more focused on actual language processing.
-</td>
-</tr>
-</table>
-
-<h2>xUnit Test Patterns</h2>
+### xUnit Test Patterns ###
 
 <em>by Gerard Meszaros</em>
 
@@ -144,7 +193,7 @@ The xUnit family of testing frameworks have fallen out of favor in some camps th
 </tr>
 </table>
 
-<h2>Domain Driven Design</h2>
+### Domain Driven Design ###
 
 <em>by Eric Evans</em>
 
@@ -159,7 +208,9 @@ XP gave us the practice of Metaphor as a way to think about design and a place t
 </tr>
 </table>
 
-<h2>The Pragmatic Programmer</h2>
+## Being a Programmer ##
+
+### The Pragmatic Programmer ###
 
 <em>by Andrew Hunt and David Thomas</em>
 
@@ -174,7 +225,7 @@ This is a classic "how to be a better programmer" books. Reading this was a cath
 </tr>
 </table>
 
-<h2>Peopleware</h2>
+### Peopleware ###
 
 <em>by Tom DeMarco and Tim Lister</em>
 
@@ -189,7 +240,7 @@ This is another great book on how to work better.
 </tr>
 </table>
 
-<h2>Software Craftsmanship</h2>
+### Software Craftsmanship ###
 
 <em>by Pete McBreen</em>
 
@@ -200,51 +251,6 @@ This is another great book on how to work better.
 </td>
 <td style="padding-left:10px;">
 The ideas of software craftsmanship have a significant following these days, and this was the first book that laid it out.
-</td>
-</tr>
-</table>
-
-<h2>The Art of Computer Programming</h2>
-
-<em>by Donald Knuth</em>
-
-<table>
-<tr>
-<td width="20%">
-<a href="http://www.amazon.com/gp/product/0321751043/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321751043&amp;linkCode=as2&amp;tag=daveastelscom-20" target="_blank"><img border="0" height="160" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=0321751043&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=daveastelscom-20"></a>
-</td>
-<td style="padding-left:10px;">
-This is our Bible. I'm currently working though it slowly. It's dense, and math heavy, so be prepared for some serious work. Currently published in four volumes: Fundamental Algorithms, Seminumerical Algorithms, Sorting and Searching, and Combinatorial Algorithms (Part 1).
-</td>
-</tr>
-</table>
-
-<h2>Fundamentals of Computer Algorithms</h2>
-
-<em>by Ellis Horowitz and Sartaj Sahni</em>
-
-<table>
-<tr>
-<td width="20%">
-<a href="http://www.amazon.com/gp/product/0914894226/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0914894226&amp;linkCode=as2&amp;tag=daveastelscom-20" target="_blank"><img border="0" height="160" src="http://ecx.images-amazon.com/images/I/51Rg9vewPVL._SX368_BO1,204,203,200_.jpg" height="160"></a>
-</td>
-<td style="padding-left:10px;">
-A classic reference for algorithms. I still have the copy (of this as well as the next book) I got for my undergrad classes. After some introductory material it dives into Searching and sorting algorithms, moves on through dynamic programming and backtracking, before finishing off with a discussion of NP-hard and NP-complete. It's 30 years old but fundamental algorithms haven't changed in that time. You can probably pick this up pretty cheaply. It's definitely worth dropping a few bucks on. Code is in a pseudo-code language designed for the book.
-</td>
-</tr>
-</table>
-
-<h2>Fundamentals of Data Structures</h2>
-
-<em>by Ellis Horowitz and Sartaj Sahni</em>
-
-<table>
-<tr>
-<td width="20%">
-<a href="http://www.amazon.com/gp/product/091489420X/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=091489420X&amp;linkCode=as2&amp;tag=daveastelscom-20"><img border="0" height="160" src="http://ecx.images-amazon.com/images/I/41%2B%2BFOoAJSL._SX373_BO1,204,203,200_.jpg"></a>
-</td>
-<td style="padding-left:10px;">
-This is the companion to the above algorithm book.  Same authors, same value. It starts off with <strong>the</strong> basic data structure: the array. It then moves through stacks, queues, lists, graphs, before spending a couple chapters on sorting. It follows that with a chapter on symbol tables and hash tables, and finishing off with a discussion of file structures. Code is in a pseudo-code language designed for the book.
 </td>
 </tr>
 </table>
