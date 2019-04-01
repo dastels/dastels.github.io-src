@@ -8,11 +8,11 @@ Status: draft
 
 ## How I Learned to Relax and Love the demonstrator
 
-I'm not really a fan of demonstrator pens. Seeing the guts is interesting sure, but if you've seen one convertor you've pretty much seen them all. I have a Monteverde Monza so I'm good with demonstrators. 
+I'm not really a fan of demonstrator pens. Seeing the guts is interesting sure, but if you've seen one convertor you've pretty much seen them all. I have a Monteverde Monza so I'm good with demonstrators.
 
 Or so I thought.
 
-With all the hype and talk on Goulet Pens about TWSBI, and the loyal fan-base os the ECO in particular, I decided to give it a try and added a clear ECO to my cart. Then I did a bit more research and happened upon the 580s, specificly the Diamond 580ALR Nickel Gray. It had the same piston filler as the ECO (no converter as the body of the pen is the ink chamber) but the mechanical bits were matte finished aluminum instead of plastic. The trim and grip were also aluminum. It sounded like a solid pen, and looked amazing.
+With all the hype and talk on Goulet Pens about TWSBI, and the loyal fan-base of the ECO in particular, I decided to give it a try and added a clear ECO to my cart. Then I did a bit more research and happened upon the 580s, specificly the Diamond 580ALR Nickel Gray. It had the same piston filler as the ECO (no converter as the body of the pen is the ink chamber) but the mechanical bits were matte finished aluminum instead of plastic. The trim and grip were also aluminum. It sounded like a solid pen, and looked amazing.
 
 So out with the ECO and in with the 580.
 
@@ -26,9 +26,9 @@ There were a few samples in the order that I was looking forward to trying. Chie
 
 What about the pen actually being a pen and not just an ink holder?
 
-It's a fairly sizable pen, huge compared to a Kaweco Sport, and just a touch longer than a Jonhao x750 (both capped) and just a touch thinner and lighter. The weight is misleading, seeming to be more more that it actually is. I think that's partially an effect of the pen being clear. The mind may expect it to be lighter. 
+It's a fairly sizable pen, huge compared to a Kaweco Sport, and just a touch longer than a Jonhao x750 (both capped) and just a touch thinner and lighter. The weight is misleading, seeming to be more more that it actually is. I think that's partially an effect of the pen being clear. The mind may expect it to be lighter.
 
-Appearance-wise, this is a beautiful pen. The clean body shows off the matte aluminum workings, and along with the matching aliminum trim this makes for a stunning look. The red RWSBI logo in the cap finial give a splash of colour that pops delightfully. One slight distraction is the use of polished steel for the ring at the end of the grip and the clip. I'm assuming that it's used for the clip for spring, and maybe for strength on the grip. In any event, it's a minimal digression from the overall look.
+Appearance-wise, this is a beautiful pen. The clean body shows off the matte aluminum workings, and along with the matching aliminum trim this makes for a stunning look. The red RWSBI logo in the cap finial give a splash of colour that pops delightfully. One slight distraction is the use of polished steel for the ring at the end of the grip and the clip. I'm assuming that it's used in the clip for spring, and maybe for strength on the grip. In any event, it's a minimal digression from the overall look.
 
 A nice detail is the "cap within the cap" that seals over the nib.
 
